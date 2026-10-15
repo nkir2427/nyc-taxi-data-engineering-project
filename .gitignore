@@ -1,3 +1,5 @@
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
+.data/originaldata/original/
+data/original/
