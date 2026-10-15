@@ -14,3 +14,17 @@ So,under this project,creating simple automated data engineering pipeline ,which
       
       4. Validate transformation logic and data contracts using automated unit tests with pytest
 
+# What Data is Ingested
+
+      Source: Official NYC Taxi and Limousine Commission (TLC) trip record dataset (Yellow Taxi monthly batches).
+      
+      Format: Compressed Apache Parquet files downloaded remotely and converted to CSV.
+
+Key Fields:
+
+      Timestamps: tpep_pickup_datetime, tpep_dropoff_datetime
+      
+      Trip metrics: trip_distance, passenger_count
+      
+      Financials: fare_amount, tip_amount, total_amount
+
