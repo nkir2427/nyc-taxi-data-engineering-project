@@ -29,5 +29,8 @@ tolls_amount	DECIMAL(6,3),
 improvement_surcharge DECIMAL(6,3)	,
 total_amount	DECIMAL(6,3),
 congestion_surcharge	DECIMAL(6,3),
-airport_fee DECIMAL(6,3)
+airport_fee DECIMAL(6,3),
+source_file NVARCHAR(255),
+ingested_at Date,
 );
+

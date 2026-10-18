@@ -83,10 +83,10 @@ BEGIN
 	END CATCH	
 END;
 
+GO
 
 
-
-
+--execute command for above sp
 
 exec bronze.bronze_load_yellow_taxi_csv
     @filepath='C:\Users\User\nyc-taxi-data-engineering-project\data\processed\yellow_tripdata__2016-01_sample.csv';
