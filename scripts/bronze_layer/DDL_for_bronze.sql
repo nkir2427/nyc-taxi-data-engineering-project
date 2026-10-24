@@ -34,3 +34,36 @@ source_file NVARCHAR(255),
 ingested_at Date,
 );
 
+
+
+create table bronze.raw_vendor
+( 
+vendor_id	INT,
+vendor_name	VARCHAR(25)
+--ingested_at	Date
+);
+
+
+
+
+create table bronze.raw_rate_code	
+(rate_code_id	INT,
+rate_code_desc	VARCHAR(25)
+--ingested_at	Date
+);
+
+
+create table bronze.raw_location	
+(location_id	INT,
+borough	NVARCHAR(50),
+zone_name	NVARCHAR(100),
+service_zone	NVARCHAR(50)
+--ingested_at	Date
+);
+
+create table bronze.raw_payment	
+(payment_type_id	INT,
+payment_type_desc	VARCHAR(25)
+--ingested_at	Date
+);
+
