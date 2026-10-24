@@ -32,7 +32,7 @@ Key Fields:
 
 The project follows the Medallion Architecture, consisting of three layers:
 
-![Data Architecture](documents/nyc_taxi_project-highlevel_architecture.jpg)
+![Data Architecture](docs/nyc_taxi_project-highlevel_architecture.jpg)
 
 
 **Bronze Layer** : Raw Data Ingestion
