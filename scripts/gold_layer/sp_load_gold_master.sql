@@ -96,4 +96,4 @@ BEGIN
 END
 
 
-EXEC gold.sp_load_gold_master
+--EXEC gold.sp_load_gold_master
