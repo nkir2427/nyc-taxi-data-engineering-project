@@ -83,7 +83,7 @@ BEGIN
 	END TRY
 	BEGIN CATCH
 		PRINT '=========================================='
-		PRINT 'ERROR OCCURED DURING LOADING BRONZE LAYER'
+		PRINT 'ERROR OCCURED DURING LOADING SILVER LAYER'
 		PRINT 'Error Message' + ERROR_MESSAGE();
 		PRINT 'Error Message' + CAST (ERROR_NUMBER() AS NVARCHAR);
 		PRINT 'Error Message' + CAST (ERROR_STATE() AS NVARCHAR);
@@ -92,4 +92,4 @@ BEGIN
 END
 
 
---EXEC Silver.sp_load_silver_master
+EXEC Silver.sp_load_silver_master

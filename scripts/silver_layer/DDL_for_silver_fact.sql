@@ -1,13 +1,17 @@
+
+drop table silver.fact_trips
+
+
 CREATE TABLE silver.fact_trips (
     month_id                INT NOT NULL,
-    trip_id                 INT NOT NULL,
-    vendor_id               INT,
+    trip_id                 INT IDENTITY(1,1)  PRIMARY KEY,
+    vendor_key               INT,
     pickup_datetime_id      INT,
     dropoff_datetime_id     INT,
-    pu_location_id          INT,
-    do_location_id          INT,
-    rate_code_id            INT,
-    payment_type_id         INT,
+    pu_location_key          INT,
+    do_location_key          INT,
+    rate_code_key            INT,
+    payment_key          INT,
     passenger_count         INT,
     trip_distance           DECIMAL(6,3),
     store_and_fwd_flag      NVARCHAR(50),
@@ -20,6 +24,5 @@ CREATE TABLE silver.fact_trips (
     total_amount            DECIMAL(6,3),
     congestion_surcharge    DECIMAL(6,3),
     airport_fee             DECIMAL(6,3),
-    source_file             NVARCHAR(255),
     ingested_at             DATE,
 ) 

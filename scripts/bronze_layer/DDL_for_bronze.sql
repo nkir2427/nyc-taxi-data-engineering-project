@@ -12,8 +12,8 @@ Go
 create table bronze.yellow_tripdata
 (
 VendorID	INT,
-tpep_pickup_datetime	Date,
-tpep_dropoff_datetime	Date,
+tpep_pickup_datetime	Datetime,
+tpep_dropoff_datetime	Datetime,
 passenger_count	INT,
 trip_distance	DECIMAL(6,3),
 RatecodeID	INT,
@@ -31,7 +31,7 @@ total_amount	DECIMAL(6,3),
 congestion_surcharge	DECIMAL(6,3),
 airport_fee DECIMAL(6,3),
 source_file NVARCHAR(255),
-ingested_at Date,
+ingested_at Datetime,
 );
 
 
